@@ -82,7 +82,7 @@
 </div>
 
 <a name="sunny" style="text-decoration:none;display:block"><div id="myDiv"  style="position:relative;overflow:hidden;width: 100%;background-image: url('images/晴天.jpg');background-repeat: no-repeat;background-position:center;text-align: center">
-<span id="blink1" style="position:absolute;top:50%;left:50%;display:block;color: #ffffff;">晴时有风...</span>
+<span style="position:absolute;top:50%;left:50%;display:block;color: #ffffff;">晴时有风</span>
 <a href="#rain" style="text-decoration:none"><img id="arrow" style="position:absolute;bottom:1rem;left:51%;display:block" src="images/箭头.png"></a>
 </div></a>
 </div>
@@ -6015,17 +6015,28 @@ Fb+0fTQ4mD+WVw941dnZUa9TlgFC6IyyLnRVTseRnExBdcTebuiB2cpkSkox89o4Gb+lwLQS8Yu4
 JX9jGKmqdwAgrojpmWKASGq2nmZKJ0sIwlicxwtvPxnUzdy/dBwoH2usBa7v3UsLhAsH/9k=" />
 		<a name="rain" style="text-decoration:none;display:block"><div id="cholder" style="position:relative">
 			<span style="position:absolute;top:50%;left:50%;display:block;color: #ffffff;">阴时有雨</span>
+			<a href="#qixi" style="text-decoration:none">
+				<img id="arrow1" style="position:absolute;bottom:1rem;left:51%;z-index:101;display:block" src="images/箭头.png">
+			</a>
 			<canvas id="canvas" style="position:static"></canvas>
-				
-
+			<!--<a href="#qixi" style="display:block;text-decoration:none;z-index=300">
+				<img id="arrow1" style="position:absolute;bottom:1rem;left:51%;display:block" src="images/箭头.png">
+			</a>-->
+			
 		</div>
 		</a>
+<a name="qixi" style="display:block;text-decoration:none;" >
+	<div id="aa" style="position:relative">
+		<span id="blink1" style="position:absolute;top:50%;left:50%;color: #000;">很高兴认识你啊<br><br>七夕快乐～></span>
+	</div>
+</a>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.imgslider.js"></script>
 <script type="text/javascript">
 var total = document.documentElement.clientHeight;
 document.getElementById("myDiv").style.height=total+"px";
 document.getElementById("outer").style.height=total+"px";
+document.getElementById("aa").style.height=total+"px";
 
     //var word = document.getElementById("word");
     //setTimeout(function() {myDiv.style.backgroundImage = "url(images/夜景.jpg)";
@@ -6038,18 +6049,29 @@ document.getElementById("outer").style.height=total+"px";
 			sunny.style.visibility = "visible";
 		else
 			sunny.style.visibility = "hidden";
-	},1000);
+	},200);
+	var rain = document.getElementById("arrow1");
+	setInterval(function(){
+		
+		if(rain.style.visibility == "hidden")
+			rain.style.visibility = "visible";
+		else
+			rain.style.visibility = "hidden";
+	},200);
 			$(function() {
 
 				$( '#fs-slider' ).imgslider();
 
 			});
 			function changeColor(){ 
-var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray"; 
-color=color.split("|"); 
-document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)]; 
-} 
-setInterval("changeColor()",200); 
+				var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray"; 
+				color=color.split("|"); 
+				document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)]; 
+				document.getElementById("blink1").style.color=color[parseInt(Math.random() * color.length)]; 
+				document.getElementById("blink1").style.color=color[parseInt(Math.random() * color.length)]; 
+			} 
+			setInterval("changeColor()",200); 
+
 </script>
 	</body>
 	
