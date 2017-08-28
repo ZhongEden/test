@@ -1,0 +1,31 @@
+.bar.nav-style{
+    background-color: #349def;
+}
+.nav-style .title{
+    color:#ffffff;
+}
+.toolbar-bottom{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+.button-block{
+    display: block;
+    font-size: 18px;
+    text-align: center;
+}
+.toolbar-bottom a{
+    float: left;
+    width: 50%;
+    padding: 5px 0px;
+}
+.white{
+    color:#fff;
+}
+/*.bar-header-secondary ~ .content{*/
+    /*top:3rem;*/
+/*}*/
+
+
+
+

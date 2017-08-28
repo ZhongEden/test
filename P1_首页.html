@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--网站开启对Web app的支持-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/humanResources.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.css">
+    <style type="text/css">
+        .app-bar{
+
+        }
+        .app-item,.general-item{
+            position: relative;
+            display: table-cell;
+            width:1%;
+            height: 2.5rem;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .app-label,.general-label{
+            display: block;
+            font-size: 0.55rem;
+            position: relative;
+            top:0.15rem;
+        }
+        .app-bar .app-item .icon{
+            top:0.05rem;
+            height:1.2rem;
+            line-height: 1.2rem;
+            font-size: 1.2rem;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .bar:after{
+            background-color: #349def;
+        }
+        .content-block-title{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current">
+        <!-- 标题栏 -->
+        <!--<header class="bar bar-nav" style="background-color: #349def">-->
+            <!--<h1 class="title" style="color: white">人力资源</h1>-->
+        <!--</header>-->
+
+        <!--常用栏 margin-top:2.2rem;-->
+        <div class="general-bar" style="background-color: #349def;height: 6.3rem">
+            <!--<div class="general-item" onclick="javascript:window.location.href='P11_新建请假申请.html'" external>-->
+                <!--<img class="icon" style="" src="images/edit.png">-->
+                <!--<span class="general-label" style="font-size: 0.7rem;color:#ffffff">请假申请</span>-->
+            <!--</div>-->
+            <img src="images/bg.jpg" style="width: 100%;height: 6.3rem">
+        </div>
+        <!--应用栏-->
+        <div class="app-bar" style="height: 3rem;background-color: #ffffff;margin-top: 0.3rem">
+            <div class="app-item" onclick="javascript:window.location.href='P5_打卡.html'">
+                <img class="icon" src="images/打卡.png">
+                <span class="app-label">打卡</span>
+            </div>
+            <div class="app-item" onclick="javascript:window.location.href='P11_新建请假申请.html'">
+                <img class="icon" src="images/编辑.png">
+                <span class="app-label">请假申请</span>
+            </div>
+            <div class="app-item">
+                <img class="icon" src="images/出差 (1).png">
+                <span class="app-label">出差</span>
+            </div>
+            <div class="app-item">
+                <img class="icon" src="images/外勤.png">
+                <span class="app-label">外勤</span>
+            </div>
+
+
+        </div>
+        <div class="app-bar" style="height: 3rem;background-color: #ffffff">
+            <div class="app-item">
+                <img class="icon" src="images/工作日志.png">
+                <span class="app-label">工作日志</span>
+            </div>
+
+            <div class="app-item">
+                <img class="icon" src="images/转正 (1).png">
+                <span class="app-label">转正</span>
+            </div>
+            <div class="app-item">
+                <img class="icon" src="images/曲线1.png">
+                <span class="app-label">个人绩效</span>
+            </div>
+            <div class="app-item">
+                <img class="icon" src="images/五角星 2.png">
+                <span class="app-label">级别调整</span>
+            </div>
+        </div>
+
+        <div class="content" style="margin-top:11rem;">
+            <div class="content-block-title" style="margin-top: 3.2rem;"><img src="images/长方形标签.png">最新消息</div>
+            <div class="list-block media-list">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title" style="font-size: 18px">张三（人力资源部）已批准了你的请假！</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="content-block-title"><img src="images/长方形标签.png">通知公告</div>
+            <div class="list-block media-list">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title" style="font-size: 18px">欢迎李四GG加入中智大家庭！</div>
+                                </div>
+                                <div class="pull-left" style="font-size: 16px;color: #999999">人力资源部</div>
+                                <div class="pull-right" style="font-size: 16px;color: #999999">发布日期：2017-08-04</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title" style="font-size: 18px">欢迎陆芳芳MM加入中智大家庭！</div>
+                                </div>
+                                <div class="pull-left" style="font-size: 16px;color: #999999">人力资源部</div>
+                                <div class="pull-right" style="font-size: 16px;color: #999999">发布日期：2017-08-03</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title" style="font-size: 18px">关于补充更新驻外探亲交通补贴标准（2017年8月）的通知</div>
+                                </div>
+                                <div class="pull-left" style="font-size: 16px;color: #999999">行政部</div>
+                                <div class="pull-right" style="font-size: 16px;color: #999999">发布日期：2017-08-02</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="bar bar-tab">
+            <a class="tab-item external active" href="#">
+                <span class="icon icon-home"></span>
+                <span class="tab-label">首页</span>
+            </a>
+            <a class="tab-item external" href="P2_待办.html">
+                <span class="icon icon-menu"></span>
+                <span class="tab-label">待办</span>
+                <span class="badge" style="top:.3rem;left:55%;height: .5rem;min-width: .5rem"></span>
+            </a>
+            <a class="tab-item external" href="P3_功能.html">
+                <span class="icon icon-app"></span>
+                <span class="tab-label">功能</span>
+            </a>
+            <a class="tab-item external" href="P4_我的.html">
+                <span class="icon icon-me"></span>
+                <span class="tab-label">我的</span>
+            </a>
+        </nav>
+
+    </div>
+</div>
+
+<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+</body>
+</html>

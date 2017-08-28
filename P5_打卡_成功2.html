@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>打卡</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/humanResources.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <style type="text/css">
+        .list-block ul:before{
+             opacity: 0;
+         }
+        .list-block .item-inner:after{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!--标题栏-->
+    <header class="bar bar-nav nav-style">
+        <a class="icon icon-left pull-left back white"></a>
+        <h1 class="title">打卡</h1>
+    </header>
+    <div class="content">
+        <div class="content-block-title" style="text-align: center;margin-top: 1.75rem">
+            <img src="images/打卡_64px.png">
+            <!--<span class="" style="font-size: 0.75rem;display: block;margin-top: 0.4rem">2017-08-16 星期三</span>-->
+            <span class="" style="font-size: 0.75rem;display: block;margin-top: 0.4rem">当前定位：广州市越秀区科学馆大院5号楼</span>
+        </div>
+        <div style="font-size: 0.8rem;margin-top: 0.6rem;margin-bottom: 0.4rem;text-align: center"><span>2017-08-16 星期三</span></div>
+        <div style="height:1.5rem;font-size:1rem;width:100%;color: #f00;text-align: center"><span style="line-height: 1.5rem">09:50</span></div>
+        <div style="height:1.5rem;font-size:.9rem;width:100%;color: #f00;text-align: center"><span style="line-height: 1.5rem">打卡排名：第207位</span></div>
+        <div style="text-align: center;font-size: .7rem"><a href="#" class="note-modal" style="text-decoration: underline">添加备注</a></div>
+
+        <div id='id-note' class="list-block" style="visibility:hidden;margin:0;position:absolute;bottom:0;width: 100%;font-size: .75rem">
+            <div style="display: table-cell;padding-left:.1rem;background-color: #ffffff;width: 1%;text-align:center;vertical-align: middle">备注:</div>
+            <div style="display: table-cell;width: 9%">
+                <ul>
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <input type="radio" name="my-radio">
+                            <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                            <div class="item-inner">
+                                特殊情况，昨晚加班
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <input type="radio" name="my-radio">
+                            <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                            <div class="item-inner">特殊情况，请假一天</div>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <input type="radio" name="my-radio">
+                            <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">其他</div>
+                                <div class="item-input">
+                                    <input type="text" placeholder="在此填写备注" style="font-size: .75rem">
+                                </div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+
+            </div>
+            <div style="display: table-cell;padding-right:.1rem;width: 1%;background-color: #fff;vertical-align: middle"><a class="button" href="P5_打卡_备注.html">提交</a></div>
+        </div>
+
+    </div>
+</div>
+
+<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script type="text/javascript" src="js/humanResources.js" charset="utf-8"></script>
+</body>
+</html>

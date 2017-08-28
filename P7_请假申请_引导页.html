@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>请假申请</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/humanResources.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.css">
+    <link rel="stylesheet" href="css/humanResources.css">
+    <style type="text/css">
+        i.icon-form-checkbox{
+            width: 1.1rem;
+            height: 1.1rem;
+            position: relative;
+            border-radius: 1.1rem;
+            border: 1px solid #c7c7cc;
+            box-sizing: border-box;
+            cursor:pointer;
+        }
+        i.icon-form-checkbox:after {
+            content: ' ';
+            position: absolute;
+            left: 50%;
+            margin-left: -0.3rem;
+            top: 50%;
+            margin-top: -0.2rem;
+            width: 0.6rem;
+            height: 0.45rem;
+        }
+        label input[type="checkbox"],
+        label input[type="radio"] {
+            display: none;
+        }
+        label input[type="checkbox"]:checked + .item-media i.icon-form-checkbox,
+        label input[type="radio"]:checked + .item-media i.icon-form-checkbox {
+            border: none;
+            background-color: #0894ec;
+        }
+        label input[type="checkbox"]:checked + .item-media i.icon-form-checkbox:after,
+        label input[type="radio"]:checked + .item-media i.icon-form-checkbox:after {
+            background: no-repeat center;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E");
+            background-size: 0.6rem 0.45rem;
+        }
+        .card-footer{
+            padding: 0px 0px;
+        }
+        .list-block.media-list .item-inner{
+            padding-bottom: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav nav-style bar-standard">
+            <a class="icon icon-left pull-left back" style="color: white"></a>
+            <a class="pull-right create-actions" style="margin-top:8px;position: relative;z-index: 20">
+                <img src="images/more_32px_white.png">
+            </a>
+            <h1 class="title">请假申请</h1>
+        </header>
+        <div class="buttons-tab bar-header-secondary">
+            <a href="#tab1" class="tab-link active button">待提交</a>
+            <a href="#tab2" class="tab-link button">已提交</a>
+        </div>
+
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+
+            <div class="content-block" style="padding: 0px 0px">
+                <div class="tabs">
+                    <div id="tab1" class="tab active">
+                        <div class="content-block" style="padding: 0px 0px">
+                            <div class="list-block cards-list">
+                                <ul>
+                                    <li class="card item-link" onclick="javascript:window.location.href='P11_新建请假申请.html'">
+                                        <div class="item-content ">
+                                            <div class="item-inner">
+                                                <div class="item-title">新建请假单</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="card" onclick="javascript:window.location.href='P8_请假待提交_处理页.html'">
+                                                <div class="card-header" >
+                                                    <span class="pull-left" style="font-size: 16px">单据状态：<span style="color: red">待提交</span></span>
+
+                                                </div>
+                                                <div class="card-content" >
+                                                   <div class="card-content-inner">
+                                                    <span>请假单号：20170725003</span><br/>
+                                                    <span>请假开始时间：2017-7-26 08:30</span><br>
+                                                    <span>请假结束时间：2017-7-26 18:00</span>
+                                                    <br/><span>总计时间：7.5小时</span>
+                                                    <br/><span>请假类型：事假</span>
+                                                    <br/><span>请假原因：考试</span>
+                                                   </div>
+                                                </div>
+                                                <div class="card-footer item-link" style="padding-left: 0.75rem">
+                                                    <div class="item-inner">
+                                                        <div class="item-title">查看更多</div>
+                                                    </div>
+                                                </div>
+
+                                    </li>
+                                    <li class="card">
+                                                    <div class="card-header">
+                                                        <span class="pull-left" style="font-size: 16px">单据状态：<span style="color: red">待提交</span></span>
+
+                                                    </div>
+                                                    <div class="card-content" >
+                                                       <div class="card-content-inner">
+                                                        <span>请假单号：20170725002</span><br/>
+                                                        <span>请假开始时间：2017-7-26 14:00</span><br>
+                                                        <span>请假结束时间：2017-7-26 18:00</span>
+                                                        <br/><span>总计时间：4.0小时</span>
+                                                        <br/><span>请假类型：事假</span>
+                                                        <br/><span>请假原因：考科目三</span>
+                                                       </div>
+                                                    </div>
+                                                    <div class="card-footer item-link" style="padding-left: 0.75rem">
+                                                        <div class="item-inner">
+                                                            <div class="item-title">查看更多</div>
+                                                        </div>
+                                                    </div>
+
+
+                                    </li>
+                                    <li class="card">
+                                                <div class="card-header">
+                                                    <span class="pull-left" style="font-size: 16px">单据状态：<span style="color: red">待提交</span></span>
+
+                                                </div>
+                                                <div class="card-content">
+                                                   <div class="card-content-inner">
+                                                    <span>请假单号：20170725001</span><br/>
+                                                    <span>请假开始时间：2017-7-27 08:30</span><br>
+                                                    <span>请假结束时间：2017-7-27 18:00</span>
+                                                    <br/><span>总计时间：7.5小时</span>
+                                                    <br/><span>请假类型：事假</span>
+                                                    <br/><span>请假原因：考试</span>
+                                                   </div>
+                                                </div>
+                                                <div class="card-footer item-link" style="padding-left: 0.75rem">
+                                                    <div class="item-inner">
+                                                        <div class="item-title">查看更多</div>
+                                                    </div>
+                                                </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab">
+                      <div class="content-block" style="padding: 0px 0px">
+                        <div class="list-block cards-list">
+                            <ul>
+                                <li class="card" onclick="javascript:window.location.href='P9_请假已通过_处理页.html'">
+                                    <div class="card-header">
+                                        <span class="pull-left" style="font-size:16px">单据状态：<span style="color: red">已完结（通过）</span></span>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-content-inner">
+                                            <span style="font-size:16px">请假单号：20170717005</span><br>
+                                            <span>请假开始时间：2017-7-13 15:00</span><br>
+                                            <span>请假结束时间：2017-7-13 18:00</span>
+                                            <br/><span>总计时间：3.0小时</span>
+                                            <br/><span>请假类型：事假</span>
+                                            <br/><span>请假原因：考科目三</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer item-link" style="padding-left: 0.75rem">
+                                        <div class="item-inner">
+                                            <div class="item-title">查看更多</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card">
+                                    <div class="card-header">
+                                        <span class="pull-left" style="font-size:16px">单据状态：<span style="color: red">已完结（通过）</span></span>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-content-inner">
+                                            <span style="font-size:16px">请假单号：20170710001</span><br>
+                                            <span>请假开始时间：2017-7-10 14:00</span><br>
+                                            <span>请假结束时间：2017-7-13 18:00</span>
+                                            <br/><span>总计时间：4.0小时</span>
+                                            <br/><span>请假类型：病假</span>
+                                            <br/><span>请假原因：肚子疼</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer item-link" style="padding-left: 0.75rem">
+                                        <div class="item-inner">
+                                            <div class="item-title">查看更多</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card">
+                                    <div class="card-header">
+                                        <span class="pull-left" style="font-size:16px">单据状态：<span style="color: red">已完结（通过）</span></span>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-content-inner">
+                                            <span style="font-size:16px">请假单号：20170524003</span><br>
+                                            <span>请假开始时间：2017-5-25 08:30</span><br>
+                                            <span>请假结束时间：2017-5-25 18:00</span>
+                                            <br/><span>总计时间：7.5小时</span>
+                                            <br/><span>请假类型：事假</span>
+                                            <br/><span>请假原因：写论文</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer item-link" style="padding-left: 0.75rem">
+                                        <div class="item-inner">
+                                            <div class="item-title">查看更多</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card">
+                                    <div class="card-header">
+                                        <span class="pull-left" style="font-size:16px">单据状态：<span style="color: red">已完结（通过）</span></span>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-content-inner">
+                                            <span style="font-size:16px">申请日期：20170315003</span><br>
+                                            <span>请假开始时间：2017-3-16 08:30</span><br>
+                                            <span>请假结束时间：2017-3-16 18:00</span>
+                                            <br/><span>总计时间：7.5小时</span>
+                                            <br/><span>请假类型：事假</span>
+                                            <br/><span>请假原因：考科目二</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer item-link" style="padding-left: 0.75rem">
+                                        <div class="item-inner">
+                                            <div class="item-title">查看更多</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script type="text/javascript" src="js/humanResources.js" charset="utf-8"></script>
+<div class="modal-overlay"></div>
+</body>
+</html>
