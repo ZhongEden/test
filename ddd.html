@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--网站开启对Web app的支持-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/humanResources.css">
+    <link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+    <link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.css">
+
+</head>
+<body>
+<!--<embed src="bg.mp3" autostart="true" loop="true" hidden="true"></embed>-->
+<div class="page">
+<audio height="100" width="100" autoplay="autoplay">
+    <source src="bg.mp3" type="audio/mp3" />
+    <embed height="100" width="100" src="bg.mp3" />
+</audio>
+<div id="myDiv" style="overflow:hidden;width: 100%;height: 100%;background-image: url('images/晴天.jpg');text-align: center">
+    <span id="word" style="display:block;color: #ffffff;margin:50% 50%">晴时有风</span>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+
+    var myDiv = document.getElementById("myDiv");
+    var word = document.getElementById("word");
+    setTimeout(function() {myDiv.style.backgroundImage = "url(images/阳光.jpg)";
+        word.innerHTML = "阴时有雨";
+    },6000);
+</script>
+
+<script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+</body>
+</html>
